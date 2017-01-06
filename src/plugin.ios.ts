@@ -48,7 +48,7 @@ export class PDFView extends common.PDFView {
   }
 
   private init() {
-    this.ios = new UIWebView(UIScreen.mainScreen().bounds);
+    this.ios = new UIWebView(UIScreen.mainScreen.bounds);
     this.delegate = PDFViewDelegate.initWithOwner(new WeakRef(this));
 
     this.ios.autoresizingMask =
